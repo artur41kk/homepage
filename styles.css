@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    line-height: 28px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+a {
+    color: #181820;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
+    transition: border .1s linear,color .1s linear,background-color .1s linear;
+}
+
+a:hover {
+    color: #ff4324;
+}
+
+p {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.break {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    max-width: 640px;
+}
+
+.break::before {
+    display: block;
+    margin-bottom: 50px;
+    border-top: 1px solid #ecf0f1;
+    content: "";
+}
+
+.container {
+    max-width: 850px;
+}
+
+.main-info {
+    display: flex;
+    margin-bottom: 7%;
+}
+
+.main-info__headers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4%;
+    line-height: 30px;
+}
+
+.main-info__header {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.main-info__subheader {
+    font-size: 22px;
+    font-weight: 600;
+    color: #5c5c62;
+}
+
+.main-info__photo {
+    height: 400px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.intro {
+    text-align: left;
+    margin-bottom: 7%;
+}
+
+.subheader{
+    margin-bottom: 20px;
+}
+
+.experience {
+    text-align: left;
+    margin-bottom: 7%;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 7%;
+}
+
+.project__picture {
+    margin-top: 10px;
+    height: 125px;
+    width: auto;
+    border-radius: 100px;
+}
+
+.project__link {
+    font-weight: 700;
+}
+
+.project__description {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.contact-info__telegram {
+    display: block;
+    padding: 15px 18px;
+    border: 2px solid #ff4324;
+    border-radius: 3px;
+    background: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ff4324;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contact-info__telegram:hover{
+    background: #ff4324;
+    color: #fff;
+}
+
+.contact-info__email {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-info, .intro, .experience, .contact-info, .project {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: left;
+    }
+
+    .subheader{
+        text-align: center;
+    }
+
+    .main-info__header, .main-info__subheader {
+        text-align: justify-all;
+        margin: 5px;
+    }
+}
